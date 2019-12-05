@@ -4,6 +4,11 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
+
+// put the WIFI credentials in wificreds.h, in the same directory as buttonthing.cpp (this file) with the lines:
+// const char* ssid = "WIFI SSID";
+// const char* password = "WIFI SECRET PASSWORD";
+// (uncommented, of course)
 #include "wificreds.h"
 
 const char* host = "max.kenkl.org";
