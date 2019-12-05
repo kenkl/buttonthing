@@ -1,2 +1,2 @@
 const char* ssid = "WIFI SSID";
-const char* password = "WIFI PASSWORD";
+const char* password = "WIFI SECRET PASSWORD";
