@@ -15,18 +15,17 @@ const char* host = "max.kenkl.org";
 
 const unsigned int clienttimeout = 60000;  //ms for client timeout in the doThing* actions
 const int led = 13;
-const int led2 = 16;
 
 const int button1 = 14;
-const char* url1 = "/lights/medtog.php"; //was normal.php
+const char* url1 = "/lights/normal.php";
 int button1State = 0;
 
 const int button2 = 2;
-const char* url2 = "/lights/readtog.php"; // was loft_teevee.php
+const char* url2 = "/lights/loft_teevee.php";
 int button2State = 0;
 
 const int button3 = 12;
-const char* url3 = "/lights/brrtog.php";  // was cinema.php
+const char* url3 = "/lights/cinema.php";
 int button3State = 0;
 
 const int button4 = 5;
@@ -34,7 +33,7 @@ const char* url4 = "/lights/alloff.php?id=L";
 int button4State = 0;
 
 const int button5 = 0;
-const char* url5 = "/lights/brfull.php";
+const char* url5 = "/lights/brhalf.php";
 int button5State = 0;
 
 const int button6 = 4;
@@ -53,9 +52,7 @@ void setup() {
   pinMode(button5, INPUT_PULLUP);
   pinMode(button6, INPUT_PULLUP);
   pinMode(led, OUTPUT);
-  pinMode(led2, OUTPUT);
   digitalWrite(led, 1);
-  digitalWrite(led2, 0);
   Serial.begin(115200);
   // delay(10);
 

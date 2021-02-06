@@ -19,3 +19,4 @@ To compile and upload the code, I use [Visual Studio Code](https://code.visualst
 
 (11-Dec-2019: I don't *think* led2(GPIO16) is actually being used for anything. I dimly remember having it there to indicate *something*, but what exactly has been lost to the sands of time and untracked code revisions. I'll get it out of there soon.)
 
+06-Jan-2021: Apparently, by "soon", nearly 13 months. Oh well. Finally got 'round to removing led2 on GPIO16, 'cos I wanted to add a seventh button to call goodmorning.php from [Lights](https://github.com/kenkl/lights). Turns out, GPIO16 has an internal pull-*down*, which doesn't suit my needs, and the vagaries of GPIO15 being used for uploads prevents that playing nicely here. I'll have to do some research (maybe do an external pull-up on 16?).
